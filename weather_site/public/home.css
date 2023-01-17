@@ -113,28 +113,34 @@ flex-direction:row;
 
  /* weather css */
 
-.input_text{
+#input_text{
     background-color: rgba(16, 15, 15, 0.802);
     color:antiquewhite;
     width:55vw;
     height:9vh;
     position:absolute;
     border-radius: 14px;
-    margin-top:12vh;
+    margin-top:5vh;
     margin-left: 22vw;
     border:0;
     font-size: 18px;
+    padding-left:2vw;
     
   
   
 }
+/* .Weather_content button[type="submit"]:hover{
+    
+    background-color:azure;
+} */
+
 #clicked_2{
     border-radius: 14px;
     width:9vw;
     height: 6vh;
-    position:relative;
-    margin-left:67vw;
-    margin-top:13.5vh;
+    position:absolute;
+    margin-left:69vw;
+    margin-top:6.5vh;
     background-color: rgb(9, 216, 253);
      border:0;
     
@@ -142,30 +148,85 @@ flex-direction:row;
 
 .result_box{
     resize:none;
-    width:30vw;
-    height:30vh;
+    width:35vw;
+    height:38vh;
     border-radius: 14px;
-    position:relative;
-    margin-left:35vw;
+    /* position:relative; */
+    margin-left:33vw;
     margin-top:13.5vh;
     background-color: rgba(16, 15, 15, 0.802);
     color:antiquewhite;
      font-size: 25px;
-     display:flex;
+     padding:2px;
+     
+     
 }
-.day{
+.first_layer{
+    display: flex;
+    background-color: rgb(30, 24, 62);
+    border-radius: 14px;
+    height: 10vh;
+    margin-top:2vh;
+    margin-left: 1vw;
+    margin-right:1vw; 
+    padding-top:12px;
+}
+#day{
  position:relative;
  
  margin-top:1vh;
  margin-left:1vw;
 }
-.date_mon{
-    position:relative;
-    margin-top:1vh;
-    margin-left:14vw;
-}
-.output{
+#date_mon{
     position:absolute;
-    margin-top:12vh;
-    margin-left:1vw;
+    margin-top:1vh;
+    margin-left:26vw;
 }
+#city_name{
+    
+  margin-left:2vw;
+  margin-top:2vh;
+  opacity:0.7;
+}
+
+#output{
+    position:absolute;
+    margin-top:6vh;
+    margin-left:2vw;
+    display:flex;
+   
+}
+#city_temp{
+    font-size: 55px;
+    opacity:0;
+   
+}
+
+#emoji{
+   position:fixed;
+    margin-left: 20vw;
+    opacity:0;
+    
+}
+.about_b{
+    height:100vh;
+}
+
+/* .poster_photo{
+    b
+   
+    animation-name:photo_change;
+    animation-duration:2s;
+    
+} */
+.slogan{
+    /* background-image: url('MlTFqN.jpg'); */
+   
+    /* position:fixed; */
+    /* margin-left:15vw;
+    margin-top:25vh; */
+    font-size:33px;
+    font-family: 'Playfair Display', serif;
+    color:rgba(233, 117, 54, 0.959)
+}
+

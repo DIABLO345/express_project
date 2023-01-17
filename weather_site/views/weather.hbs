@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+   
+    <title>weather</title>
+    <link rel="stylesheet" href="home.css">
+    
+ 
+</head>
+<body>
+    
+   {{>header}}
+   <div class="Weather_content">
+    <form>
+        <input id="input_text" type="text" placeholder="Enter your city name" >
+        <button type="submit" id="clicked_2" >SEARCH</button>
+        <br>
+        {{!-- <textarea class="result_box" resize="none" col="30" row="30"></textarea> --}}
+        <div class="result_box">
+          <div class="first_layer">
+           <div id="day">day</div>
+             <div id="date_mon">date_mon</div>
+             </div>
+          <div class="mainlayer"><div id="city_name">get output here</div>
+           <div id="output">             
+           <div id="city_temp">0<sup>o</sup>C</div>
+            <div id="emoji"><i class="fa-solid fa-cloud fa-3x"></i></div>
+           </div>
+          </div>
+        </div>
+    </form>
+   </div>
+    {{>footer}}
+    <script>
+      
+        const date=new Date();
+        var day=date.getDay();
+        var cur_date=date.getDate();
+        var month=date.getMonth();
+     var month_arr=["JAN","FEB","MAR","APR","MAY","JUNE","JULY","AUG","SEPT","OCT","NOV","DEC"];
+     var days_arr=["SUN","MON","TUES","WED","THUS","FRI","SAT"];
+     document.getElementById("day").innerHTML=days_arr[day];
+      document.getElementById("date_mon").innerHTML=cur_date+" "+month_arr[month];
+
+    
+     
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
